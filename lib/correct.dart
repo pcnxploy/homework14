@@ -9,17 +9,28 @@ class GuessTrue extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:
-        Text("GUESS TEACHER'S AGE", style: TextStyle(color: Colors.white)),
+            Text("GUESS TEACHER'S AGE", style: TextStyle(color: Colors.white)),
       ),
       body: Container(
-        child: Column(
-          children: [
-            Text('อายุุอาจารย์'),
-            Text('25 ปี 6 เดือน'),
-            Icon(
-              Icons.check,
-            ),
-          ],
+        color: Colors.yellow.shade100,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'อายุุอาจารย์',
+                style: TextStyle(fontSize: 30.0, color: Colors.green),
+              ),
+              SizedBox(height: 10.0),
+              Text('25 ปี 6 เดือน', style: TextStyle(fontSize: 20.0)),
+              SizedBox(height: 10.0),
+              Icon(
+                Icons.check,
+                size: 50.0,
+                color: Colors.green,
+              ),
+            ],
+          ),
         ),
       ),
     );
